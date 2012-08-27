@@ -18,9 +18,13 @@ test: &test
   pool: 5
   timeout: 5000
 
-production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+production: 
+  adapter: postgresql 
+  database: rails-prelaunch-signup
+  username: deploy 
+  password: 75218463stg520
+  host: http://ec2-107-22-191-200.compute-1.amazonaws.com/
+  reconnect: true 
   pool: 5
   timeout: 5000
 
