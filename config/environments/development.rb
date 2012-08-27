@@ -23,9 +23,9 @@ RailsPrelaunchSignup::Application.configure do
 
     config.action_mailer.smtp_settings = {
       :address   => "smtp.mandrillapp.com",
-      :port      => 25,
-      :user_name => ENV["MANDRILL_USERNAME"],
-      :password  => ENV["MANDRILL_API_KEY"]
+      :port      => 587,
+      :user_name => ENV["travismcdonald@gmail.com"],
+      :password  => ENV["a5de9a78-cf98-4700-aa9a-50cb8a8efa0a"]
     }
 
 
